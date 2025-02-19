@@ -6,6 +6,8 @@ Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
 Flat is better than nested.
+debiliukas
+esi
 Sparse is better than dense.
 Readability counts.
 Special cases aren't special enough to break the rules.
