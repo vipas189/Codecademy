@@ -1,0 +1,83 @@
+import datetime
+
+
+class Kambarys:
+    def __init__(self, numeris, tipas, kaina_parai, ar_uzimtas):
+        self.numeris = numeris
+        self.tipas = tipas
+        self.kaina_parai = kaina_parai
+        self.ar_uzimtas = ar_uzimtas
+
+
+class Rezervacija:
+    def __init__(
+        self,
+        kliento_vardas,
+        kliento_pavarde,
+        kambario_numeris,
+        pradzios_data,
+        pabaigos_data,
+        bendra_kaina,
+    ):
+        self.kliento_vardas = kliento_vardas
+        self.kliento_pavarde = kliento_pavarde
+        self.kambario_numeris = kambario_numeris
+        self.pardzios_data = pradzios_data
+        self.pabaigos_data = pabaigos_data
+        self.bendra_kaina = bendra_kaina
+
+
+class Viesbutis:
+    def __init__(self, pavadinimas, kambariai, rezervacijos):
+        self.pavadinimas = pavadinimas
+        self.kabmariai = kambariai
+        self.rezervacijos = rezervacijos
+
+        def prideti_kambari(self, kambarys: Kambarys):
+            pass
+
+        def rezervuoti_kambari(
+            self, kliento_vardas, kliento_pavarde, tipas, prad_data, pab_data
+        ):
+            pass
+
+        def atlaisvinti_kambari(self, kambario_numeris):
+            pass
+
+        def isaugoti_i_faila_failu_sistem(self, file_path):
+            pass
+
+        def nuskaityti_is_failo_failu_sistema(file_path):
+            pass
+
+
+k420 = Kambarys(420, "Dvivietis", 110, False)
+k520 = Kambarys(520, "Vienvietis", 50, True)
+k320 = Kambarys(320, "Liuksas", 400, False)
+
+rezerv420 = Rezervacija(
+    "Raimis",
+    "Juodauskas",
+    420,
+    datetime.datetime(2024, 1, 2),
+    datetime.datetime(2024, 1, 4),
+    110,
+)
+rezerv520 = Rezervacija(
+    "Raimis",
+    "Juodauskas",
+    520,
+    datetime.datetime(2024, 2, 1),
+    datetime.datetime(2024, 3, 1),
+    50,
+)
+rezerv320 = Rezervacija(
+    "Raimis",
+    "Juodauskas",
+    320,
+    datetime.datetime(2025, 1, 1),
+    datetime.datetime(2025, 1, 3),
+    400,
+)
+
+viesbutis = Viesbutis("Rimgailes", [520, 420, 320], [])
